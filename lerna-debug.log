@@ -1,0 +1,76 @@
+0 silly argv {
+0 silly argv   _: [ 'bootstrap' ],
+0 silly argv   lernaVersion: '3.19.0',
+0 silly argv   '$0': '/usr/local/bin/lerna'
+0 silly argv }
+1 notice cli v3.19.0
+2 verbose rootPath /Users/hanad/workspace/apps/react-insta-stories
+3 info versioning independent
+4 silly npmConfig {
+4 silly npmConfig   registry: undefined,
+4 silly npmConfig   npmClient: 'npm',
+4 silly npmConfig   npmClientArgs: [],
+4 silly npmConfig   mutex: undefined
+4 silly npmConfig }
+5 info Bootstrapping 4 packages
+6 verbose lifecycle preinstall
+7 silly lifecycle No script for "preinstall" in "@pkg/tt-test", continuing
+8 silly lifecycle No script for "preinstall" in "react-insta-stories", continuing
+9 silly lifecycle No script for "preinstall" in "react-native-stories", continuing
+10 silly lifecycle No script for "preinstall" in "react-insta-stories_v2", continuing
+11 silly hasDependencyInstalled react-insta-stories @babel/core
+12 silly hasDependencyInstalled react-insta-stories_v2 @babel/core
+13 silly hasDependencyInstalled react-insta-stories @babel/preset-env
+14 silly hasDependencyInstalled react-insta-stories_v2 @babel/preset-env
+15 silly hasDependencyInstalled react-insta-stories @babel/preset-react
+16 silly hasDependencyInstalled react-insta-stories_v2 @babel/preset-react
+17 silly hasDependencyInstalled react-insta-stories @teamsupercell/typings-for-css-modules-loader
+18 silly hasDependencyInstalled react-insta-stories_v2 @teamsupercell/typings-for-css-modules-loader
+19 silly hasDependencyInstalled react-insta-stories @types/react
+20 silly hasDependencyInstalled react-insta-stories_v2 @types/react
+21 silly hasDependencyInstalled react-insta-stories @types/react-dom
+22 silly hasDependencyInstalled react-insta-stories_v2 @types/react-dom
+23 silly hasDependencyInstalled react-insta-stories babel-loader
+24 silly hasDependencyInstalled react-insta-stories_v2 babel-loader
+25 silly hasDependencyInstalled react-insta-stories css-loader
+26 silly hasDependencyInstalled react-insta-stories_v2 css-loader
+27 silly hasDependencyInstalled react-insta-stories react
+28 silly hasDependencyInstalled react-native-stories react
+29 silly hasDependencyInstalled react-insta-stories_v2 react
+30 silly hasDependencyInstalled react-insta-stories source-map-loader
+31 silly hasDependencyInstalled react-insta-stories_v2 source-map-loader
+32 silly hasDependencyInstalled react-insta-stories style-loader
+33 silly hasDependencyInstalled react-insta-stories_v2 style-loader
+34 silly hasDependencyInstalled react-insta-stories ts-loader
+35 silly hasDependencyInstalled react-insta-stories_v2 ts-loader
+36 silly hasDependencyInstalled react-insta-stories typescript
+37 silly hasDependencyInstalled react-insta-stories_v2 typescript
+38 silly hasDependencyInstalled react-insta-stories webpack
+39 silly hasDependencyInstalled react-insta-stories_v2 webpack
+40 silly hasDependencyInstalled react-insta-stories webpack-cli
+41 silly hasDependencyInstalled react-insta-stories_v2 webpack-cli
+42 silly hasDependencyInstalled react-insta-stories webpack-dev-server
+43 silly hasDependencyInstalled react-insta-stories_v2 webpack-dev-server
+44 silly hasDependencyInstalled react-native-stories metro-react-native-babel-preset
+45 silly hasDependencyInstalled react-native-stories react-native
+46 silly root dependencies {}
+47 silly leaf dependencies {}
+48 info Symlinking packages and binaries
+49 silly actions finished @pkg/tt-test
+50 silly actions finished react-insta-stories
+51 silly resolveSymlink /Users/hanad/workspace/apps/react-insta-stories/packages/react-insta-stories_v2/node_modules/@pkg/tt-test
+52 verbose resolveSymlink [
+52 verbose resolveSymlink   '/Users/hanad/workspace/apps/react-insta-stories/packages/react-insta-stories_v2/node_modules/@pkg/tt-test',
+52 verbose resolveSymlink   '/Users/hanad/workspace/apps/react-insta-stories/packages/dist'
+52 verbose resolveSymlink ]
+53 silly createSymlink [
+53 silly createSymlink   '/Users/hanad/workspace/apps/react-insta-stories/packages/dist',
+53 silly createSymlink   '/Users/hanad/workspace/apps/react-insta-stories/packages/react-insta-stories_v2/node_modules/@pkg/tt-test',
+53 silly createSymlink   'junction'
+53 silly createSymlink ]
+54 silly createSymbolicLink [
+54 silly createSymbolicLink   '../../../dist',
+54 silly createSymbolicLink   '/Users/hanad/workspace/apps/react-insta-stories/packages/react-insta-stories_v2/node_modules/@pkg/tt-test',
+54 silly createSymbolicLink   'junction'
+54 silly createSymbolicLink ]
+55 error
