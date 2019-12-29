@@ -29,6 +29,7 @@ export interface StoryProps {
     getVideoDuration: Function;
     bufferAction: boolean;
     count: number;
+    interval: number;
 }
 export interface StoryState {
     loaded: boolean;

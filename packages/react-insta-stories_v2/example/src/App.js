@@ -32,7 +32,7 @@ function Test(props) {
   return (
     <div style={{ background: 'pink', padding: 20, width: '100%' }}>
       <div>
-        <h1>{Math.round(props.progress)}</h1>
+        <h1>{props.isPaused.toString()} === {Math.round(props.progress)}</h1>
       </div>
     </div>
   )
@@ -46,14 +46,14 @@ const stories2 = [
     content: props => {
       return <div style={{ background: 'pink', padding: 20, width: '100%' }}>
 
-        <h1>{Math.round(props.progress)}</h1>
+        <h1>{props.isPaused.toString()} === {Math.round(props.progress)}</h1>
       </div>
     },
   },
   {
     content: props => {
       return <div style={{ background: 'pink', padding: 20, width: '100%' }}>
-        <h1>{Math.round(props.progress)}</h1>
+        <h1>{props.isPaused.toString()} === {Math.round(props.progress)}</h1>
       </div>
     },
   },

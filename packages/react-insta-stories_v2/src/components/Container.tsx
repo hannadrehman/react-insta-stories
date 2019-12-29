@@ -12,7 +12,6 @@ export default function () {
     const countRef = useRef<number>(0)
     const [bufferAction, setBufferAction] = useState<boolean>(true)
     const [videoDuration, setVideoDuration] = useState<number>(0)
-
     let mousedownId = useRef<NodeJS.Timeout>()
     let animationFrameId = useRef<number>()
 
@@ -89,6 +88,9 @@ export default function () {
     }
 
     const getCurrentInterval = () => {
+        if (!stories[currentId]) {
+            return defaultInterval
+        }
         if (stories[currentId].type === 'video') return videoDuration
         if (typeof stories[currentId].duration === 'number') return stories[currentId].duration
         return defaultInterval
@@ -173,10 +175,11 @@ export default function () {
                 story={stories[currentId]}
                 getVideoDuration={getVideoDuration}
                 count={count}
+                interval={stories[currentId] ? getCurrentInterval() : defaultInterval}
             />
             <div style={styles.overlay}>
-                <div style={{ width: '50%', zIndex: 999 }} onTouchStart={debouncePause} onTouchEnd={e => mouseUp(e, 'previous')} onMouseDown={debouncePause} onMouseUp={(e) => mouseUp(e, 'previous')} />
-                <div style={{ width: '50%', zIndex: 999 }} onTouchStart={debouncePause} onTouchEnd={e => mouseUp(e, 'next')} onMouseDown={debouncePause} onMouseUp={(e) => mouseUp(e, 'next')} />
+                <div style={{ width: '50%', zIndex: 999, touchAction: 'none' }} onTouchStart={debouncePause} onTouchEnd={e => mouseUp(e, 'previous')} onMouseDown={debouncePause} onMouseUp={(e) => mouseUp(e, 'previous')} />
+                <div style={{ width: '50%', zIndex: 999, touchAction: 'none' }} onTouchStart={debouncePause} onTouchEnd={e => mouseUp(e, 'next')} onMouseDown={debouncePause} onMouseUp={(e) => mouseUp(e, 'next')} />
             </div>
         </div>
     )

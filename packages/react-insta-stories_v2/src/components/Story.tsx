@@ -79,7 +79,7 @@ const Story = (props: StoryProps) => {
 	const getStoryContent = () => {
 		let InnerContent = typeof props.story === "object" && props.story.content
 		if (InnerContent) {
-			return <InnerContent progress={props.count} action={props.action} isPaused={props.playState} />
+			return <InnerContent progress={props.count} interval={props.interval} action={props.action} isPaused={props.playState} />
 		} else {
 			let source =
 				typeof props.story === "object" ? props.story.url : props.story;
