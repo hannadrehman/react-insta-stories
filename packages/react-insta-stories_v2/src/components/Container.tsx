@@ -64,7 +64,7 @@ export default function () {
                 animationFrameId.current = requestAnimationFrame(incrementCount)
             }
             const b = performance.now();
-            if (b - a.current < 10 && count < 100 && countRef.current < 100) {
+            if ((b - a.current < 10 && count < 100 && countRef.current < 100) || isPaused) {
                 return count
             }
             a.current = b;
